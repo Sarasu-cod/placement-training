@@ -1,0 +1,10 @@
+n = int(input())
+binary = bin(n)[2:]
+toggle = ""
+for bit in binary:
+    if bit == '0':
+        toggle += '1'
+    else:
+        toggle += '0'
+res = int(toggle, 2)
+print(res)
